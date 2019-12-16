@@ -7,14 +7,40 @@ body {
 	font-weight: bold;
 	margin: 0;
 	padding: 0.5em;
-	background: white;
+	background: #f2f2f2;
 	color:black;
 	font-size: 22px;
 	line-height: 1.2;
 }
+body{
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/unsplahBg2.jpg) no-repeat center / cover;
+}
+ul{
+  padding: 0;
+}
+
+button {
+  position: relative;
+  background: rebeccapurple;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border:5px solid white;
+  color: white;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 50px;
+  cursor: pointer;
+  padding: 0;
+}
 main {
 	max-width: 35em;
-	margin: 5em auto;
+	margin: 2em auto;
 	border-left: 2px solid white;
 	padding: 0 0.5em;
 	perspective: 20em;}
@@ -27,46 +53,51 @@ h1,h2, h3 {
 	margin: 0 0 1rem 0;
 	padding: 0;
 }	
-h2{ 
-font-family: sans-serif;
-border-radius: 2em;
- }
- h3{ 
- font-family: serif;
- size: 1em; }
-p {
+
+ 
+p { font-family: sans-serif;
 	margin: 0 0 1rem 0;
 	border-radius: 2em;
-	
+	font-size: 15px;
+	color: ;
 
+}
+.wiki {
+  border-left:1.5em;
+  color: red;
 }
 @keyframes p {
   from { top: 0; left: 0; }
   to   { top: 100px; left: 100px; }
 }
 img {
-	max-width: 100%;
+	max-width: 90%;
 	height: auto;
+	margin: 2em;
+	border-radius: 2px;
+
 }
-picture{
-	max-width: 150%;
+
 }
-footer {
-	background: white;
-	margin: -0.5em;
-	padding: 1em 0.5em 1em 0.5em;
-	color: green;
-	text-align: right;
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+
+
 }
 .borders {
-	border-radius: 20em 10em 10em 20em;
+	border-radius: 5em 10em 5em 10em;
 	animation-name: borders;
 	animation-duration: 10s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	transform: rotateY(20deg);
-	transform-origin: left;
+	transform-origin: center;
 	transition: transform 3s;
 }
 
@@ -80,49 +111,90 @@ footer {
 	to { border-radius: 0 1em 10em 0; }
 }
 
-.button {
-	border: 2px solid;
+.button{
+
+	border: 5px solid;
 	border-radius: 3em;
 	padding: 0.25em 0.5em;
 	text-decoration: none;
-	color: #282828;
+	color: green;
 	display: inline-block;
 	margin: 0.5em 0;
 	transition:  0.25s;
+	border-left: 3em;
 
 }
 
 .button:hover {
-	color: white;
+	color:black;
 	
 
 }
+.button-1 {
+	border: 5px solid;
+	border-radius: 3em;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	color: green;
+	display: inline-block;
+	margin: em 0;
+	transition:  0.25s;
+
+
 
 }
-.box{ 
-    border-radius: 1em;
-    border-radius: 1em;
-    padding: 0.5em 0.25em;
-   text-decoration: none;
-	color: #282828;
+
+.button-2 {
+	border: 5px solid;
+	border-radius: 3em;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	color: green;
 	display: inline-block;
-	margin: 0.5em 0;
-	transition: color 0.25s; }
+	margin: 2em 0;
+	transition:  0.25s;
+
+}
+.button-3 {
+	border: 5px solid;
+	border-radius: 3em;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	color: green;
+	display: inline-block;
+	margin-left: 0.5em 1em;
+	transition:  0.25s;
+
+}
+.button-4 {
+	border: 5px solid;
+	border-radius: 3em;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	color: green;
+	display: inline-block;
+	margin: 5em 0;
+	transition:  0.25s;
+	align-items: 5em;
+
+}
+
 nav {
 	position: fixed;
     top: 0;
     left: 0;
+    right: 15px;
     width: 100%;
     background: white;
     z-index: 2;
-    padding: 0.5em;
+    padding: 0.1em;
     display: flex;
     justify-content: flex-end;
 }
 
 nav a {
 
-	color: #282828;
+	color: green;
 	margin: 0.5em;
 	text-decoration: none;
 	transition: color 0.25s;
@@ -199,17 +271,15 @@ letter-spacing: 20px;
 
 }
 
-.backhome{
- 	background-image: url(picture/pic-3.jpg);
+footer {
 
+	margin: 1em;
+	padding: 1em 0.5em 1em 0.5em;
+	color: green;
+	text-align: right;
+	margin-bottom: 400px;
 }
-.backstar{
- 	background-image: url(picture/pic-7.jpg);
-
-
-}
-
-
+.
 
 
 
